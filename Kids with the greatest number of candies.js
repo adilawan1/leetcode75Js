@@ -31,3 +31,10 @@
 // 2 <= n <= 100
 // 1 <= candies[i] <= 100
 // 1 <= extraCandies <= 50
+
+/**
+ * @param {number[]} candies
+ * @param {number} extraCandies
+ * @return {boolean[]}
+ */
+var kidsWithCandies = function (candies, extraCandies) {};
