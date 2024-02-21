@@ -37,4 +37,9 @@
  * @param {number} extraCandies
  * @return {boolean[]}
  */
-var kidsWithCandies = function (candies, extraCandies) {};
+var kidsWithCandies = function (candies, extraCandies) {
+  const max = Math.max(...candies);
+  return candies.map((kid) => {
+    return kid + extraCandies >= max;
+  });
+};
