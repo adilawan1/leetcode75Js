@@ -15,3 +15,17 @@
 
 // 1 <= s.length <= 3 * 105
 // s consist of printable ASCII characters.
+
+/**
+ * @param {string} s
+ * @return {string}
+ */
+var reverseVowels = function (s) {
+  const vowels = ["a", "e", "i", "o", "u", "A", "E", "I", "O", "U"];
+  const strArr = s.split("");
+  const vowelArr = strArr.filter((letter) => vowels.includes(letter));
+  const Reversed = strArr
+    .map((letter) => (vowels.includes(letter) ? vowelArr.pop() : letter))
+    .join("");
+  return Reversed;
+};
