@@ -5,3 +5,9 @@
 // Return the maximum amount of water a container can store.
 
 // Notice that you may not slant the container.
+
+/**
+ * @param {number[]} height
+ * @return {number}
+ */
+var maxArea = function (height) {};
