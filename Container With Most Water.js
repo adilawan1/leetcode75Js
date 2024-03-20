@@ -12,4 +12,6 @@
  * @param {number[]} height
  * @return {number}
  */
-var maxArea = function (height) {};
+var maxArea = function (height) {
+  const n = height.length;
+};
