@@ -14,4 +14,6 @@
  */
 var maxArea = function (height) {
   const n = height.length;
+
+  //Calculation of Area between the max bars
 };
