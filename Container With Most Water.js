@@ -13,7 +13,14 @@
  * @return {number}
  */
 var maxArea = function (height) {
-  const n = height.length;
+  let ans = 0,
+    i = 0,
+    j = H.length - 1;
+  while (i < j) {
+    ans = Math.max(ans, Math.min(H[i], H[j]) * (j - i));
+    H[i] <= H[j] ? i++ : j--;
+  }
+  return ans;
 
   //Calculation of Area between the max bars
 };
