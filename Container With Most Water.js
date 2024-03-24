@@ -22,5 +22,13 @@ var maxArea = function (height) {
   }
   return ans;
 
+  // let left=0;
+  // let right=0;
+  // for (let i=0;i<height.length;i++){
+  //     left=i
+  //     right=height.length-i-1
+  //     const height=
+  //     console.log(left,height[left],right,height[right])
+  // }
   //Calculation of Area between the max bars
 };
