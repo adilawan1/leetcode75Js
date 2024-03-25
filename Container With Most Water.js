@@ -30,5 +30,4 @@ var maxArea = function (height) {
   //     const height=
   //     console.log(left,height[left],right,height[right])
   // }
-  //Calculation of Area between the max bars
 };
