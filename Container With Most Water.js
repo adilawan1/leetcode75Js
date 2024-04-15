@@ -13,21 +13,14 @@
  * @return {number}
  */
 var maxArea = function (height) {
-  let ans = 0,
-    i = 0,
-    j = H.length - 1;
-  while (i < j) {
-    ans = Math.max(ans, Math.min(H[i], H[j]) * (j - i));
-    H[i] <= H[j] ? i++ : j--;
+  let j = height.length - 1;
+  let i = 0;
+  let maxArea = 0;
+  while (j > i) {
+    let Area = (j - i) * Math.min(height[i], height[j]);
+    if (Area > maxArea) maxArea = Area;
+    if (height[i] < height[j]) i++;
+    else j--;
   }
-  return ans;
-
-  // let left=0;
-  // let right=0;
-  // for (let i=0;i<height.length;i++){
-  //     left=i
-  //     right=height.length-i-1
-  //     const height=
-  //     console.log(left,height[left],right,height[right])
-  // }
+  return maxArea;
 };
